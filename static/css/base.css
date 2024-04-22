@@ -56,8 +56,18 @@ body {
     border: 1px solid black !important;
 }
 
-.bg-black{
+.bg-black {
     background: #000 !important;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
 }
 
 /* -------------------------------- Media Queries */
@@ -79,6 +89,12 @@ body {
         z-index: 1030;
     }
 
+    .header-container {
+        padding-top: 164px;
+    }
+}
+
+@media (min-width: 768px) {
     .header-container {
         padding-top: 164px;
     }
